@@ -8,7 +8,7 @@ async function getWeather()
     try
     {
         var input = document.querySelector(".searchBar > input").value;
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=774e144eeb8543a497a04314232704&q=${input}&aqi=no`,{mode:"cors"});
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=774e144eeb8543a497a04314232704&q=${input}&aqi=no`,{mode:"cors"});
 
         const wdata = await response.json();
 
