@@ -116,8 +116,9 @@ svg{
 .otherdata
 {
     display:flex;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    gap:15px;
     justify-content: space-around;
     
 }
@@ -152,7 +153,7 @@ footer{
     font-family: 'Montserrat', sans-serif;
     /* margin-top: -100px; */
 }
-@media (max-width:600px)
+@media (max-width:600px),(max-height:600px)
 {
     .searchBar
 {
@@ -163,13 +164,39 @@ footer{
     margin:10vw;
     background-color: rgba(240, 248, 255, 0.285);
     border-radius: 30px;
-    margin-left:5vw;
-    margin-right: 5vw;
-    padding:10px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding:0px;
     width: fit-content;
-    font-size: small;
+    font-size: smaller;
 
     
+}
+.searchBar > input
+{
+    background-color: #f0ebeb;
+    
+    
+    border-radius: 40px;
+    width:50vw;
+    height: auto;
+    /* font-size: smaller; */
+    color:black;
+    padding-left: 20px;
+    border: #f0ebeb;
+    
+}
+.searchBar > button
+{
+    font-size: smaller;
+    border-radius:20px;
+    color:white;
+    border-color:rgb(189, 186, 186);
+    background-color: rgb(189, 186, 186);
+}
+input::placeholder
+{
+    color:rgba(0, 0, 0, 0.271);
 }
     body,html{
         height: 100vh;
@@ -192,10 +219,11 @@ footer{
         align-items: center;
         /* background-color: rgba(106, 177, 239, 0.688); */
         border-radius: 30px;
-        margin-left:25vw;
-        margin-right: 25vw;
+        margin-left:20vw;
+        margin-right: 20vw;
         font-family: 'Montserrat', sans-serif;
         padding: 10px;
+        /* margin-bottom: 10vh; */
        
         
     }
