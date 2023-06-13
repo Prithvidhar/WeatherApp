@@ -28,8 +28,8 @@ body,html{
     margin:20px;
     background-color: rgba(240, 248, 255, 0.285);
     border-radius: 30px;
-    margin-left:15%;
-    margin-right: 15%;
+    margin-left:15vw;
+    margin-right: 15vw;
     padding:10px;
     width: fit-content;
 
@@ -109,6 +109,7 @@ svg{
     margin-top: 0px;
     font-size: larger;
     min-width: fit-content;
+    margin-bottom: 0px;
 }
 
 /*********************************/
@@ -164,28 +165,45 @@ footer{
         margin-left:25vw;
         margin-right: 25vw;
         font-family: 'Montserrat', sans-serif;
-        padding: 20px;
-        overflow: auto;
-        min-width: min-content;
-        min-height: auto;
+        padding: 10px;
+       
+        
     }
     .temp > h2{
         margin-bottom: 0px;
         min-width: fit-content;
         font-size: smaller;
+        /* overflow: visible; */
     }
     .temp > p:first-of-type
     {
-        font-size: 10vh;
+        font-size: 5vh;
         margin-top: 0px;
         margin-bottom: 0px;;
         min-width: fit-content;
+        min-height: fit-content;
     }
     .temp > p:nth-of-type(2)
     {
         margin-top: 0px;
-        font-size: larger;
+        font-size: medium;
         min-width: fit-content;
+        margin-bottom: 0px;
+    }
+    .rain,.humid
+    {
+        display:flex;
+        flex-direction: column;
+        margin-top: 10vh;
+        
+        border-radius: 20px;
+        padding:5vh;
+        color:white;
+        flex-shrink: 2;
+    }
+    .rain > h2,.humid > h2{
+        text-align: center;
+        flex-shrink:2;
     }
 }
 
