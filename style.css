@@ -28,9 +28,10 @@ body,html{
     margin:20px;
     background-color: rgba(240, 248, 255, 0.285);
     border-radius: 30px;
-    margin-left:15vw;
-    margin-right: 15vw;
+    margin-left:15%;
+    margin-right: 15%;
     padding:10px;
+    width: fit-content;
 
     
 }
@@ -89,20 +90,25 @@ svg{
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
     overflow: auto;
+    min-width: min-content;
+    min-height: auto;
 }
 .temp > h2{
     margin-bottom: 0px;
+    min-width: fit-content;
 }
 .temp > p:first-of-type
 {
     font-size: 20vh;
     margin-top: 0px;
     margin-bottom: 0px;;
+    min-width: fit-content;
 }
 .temp > p:nth-of-type(2)
 {
     margin-top: 0px;
     font-size: larger;
+    min-width: fit-content;
 }
 
 /*********************************/
@@ -138,10 +144,48 @@ footer{
     float:inline-end;
     align-items: center;
     position: relative;
+    /* font-size: auto; */
     bottom: 0px;
     /* height: 5vh; */
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     /* margin-top: -100px; */
+}
+@media (max-width:600px)
+{
+    .temp
+    {
+        display:flex;
+        flex-direction: column;
+        color:white;
+        align-items: center;
+        /* background-color: rgba(106, 177, 239, 0.688); */
+        border-radius: 30px;
+        margin-left:25vw;
+        margin-right: 25vw;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+        overflow: auto;
+        min-width: min-content;
+        min-height: auto;
+    }
+    .temp > h2{
+        margin-bottom: 0px;
+        min-width: fit-content;
+        font-size: smaller;
+    }
+    .temp > p:first-of-type
+    {
+        font-size: 10vh;
+        margin-top: 0px;
+        margin-bottom: 0px;;
+        min-width: fit-content;
+    }
+    .temp > p:nth-of-type(2)
+    {
+        margin-top: 0px;
+        font-size: larger;
+        min-width: fit-content;
+    }
 }
 
