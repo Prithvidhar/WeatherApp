@@ -64,7 +64,7 @@ async function getWeather()
         }
         else if(rain.includes(parseInt(theWeather["current"]["condition"]["code"])))
         {
-            video.src = "rain/cloudy.mp4";
+            video.src = "media/rain.mp4";
             backcred.innerHTML='Video by <a href="https://pixabay.com/users/relaxing_guru-11517010/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=31450">&amp; Co.</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=31450">Pixabay</a>';
         }
         else if(snow.includes(parseInt(theWeather["current"]["condition"]["code"])))
